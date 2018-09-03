@@ -13,4 +13,4 @@ Demo REST API built with Node.js.
 
 ## Reference
 + [Codementor Tutorial](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
-+ [Implementing Swagger] (https://github.com/Mobecom/JSDoc-Swagger-Washywashy)
++ [Implementing Swagger](https://github.com/Mobecom/JSDoc-Swagger-Washywashy)
