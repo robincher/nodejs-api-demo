@@ -1,13 +1,7 @@
 'use strict';
-const taskController = require('../controllers/taskController');
+const express = require('express');
+const router = express.Router();
 
-module.exports = function(app) {
-  app.route('/tasks')
-    .get(taskController.listTasks)
-    .post(taskController.createTask);
+router.use('/tasks', require('./tasks'));
 
-  app.route('/tasks/:taskId')
-    .get(taskController.readTask)
-    .put(taskController.updateTask)
-    .delete(taskController.deleteTask);
-};
+module.exports = router;
