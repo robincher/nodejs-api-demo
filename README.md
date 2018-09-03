@@ -1,6 +1,6 @@
 # Node API Demo
 
-Demo REST API built with Node.js. 
+Demo REST API built with Node.js and OpenAPI (Swagger) documentation.
 
 ## Tech Stack
 * Node.js 8.x.x
@@ -10,6 +10,15 @@ Demo REST API built with Node.js.
     - Mongoose for interracting with MongoDB
     - BodyParser to parse request body
 * MongoDB 4.0
+
+## Walkthrough
+
+### Starting the REST API Server
+```
+npm start run
+```
+
+View the OpenAPI documentation @ http://localhost:3000/api-docs
 
 ## Reference
 + [Codementor Tutorial](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
