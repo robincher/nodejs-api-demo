@@ -43,6 +43,11 @@ app.get('/api-docs.json', function(req, res) {
     res.send("swaggerSpec");
 });
 
+//Serve Default homepage
+app.get('/home', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 //Parse incoming request bodies and register nested route
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
