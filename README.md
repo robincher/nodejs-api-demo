@@ -3,7 +3,7 @@
 Demo REST API built with Node.js and OpenAPI (Swagger) documentation.
 
 ## Tech Stack
-* Node.js 8.x.x
+* Node.js 10.x.x
 * NPM Libraries
     - Nodemon for Debugging and keeping track of changed files
     - Express for initiating the server
