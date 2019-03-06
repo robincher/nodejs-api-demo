@@ -5,7 +5,7 @@
   "main": "server.js",
   "engineStrict": true,
   "engines": {
-    "node": "^8.x.x"
+    "node": "^10.x.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,8 +29,8 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.4.17",
     "swagger-jsdoc": "^3.2.7",
-    "swagger-ui-express": "^4.0.1"
+    "swagger-ui-express": "^4.0.2"
   }
 }
