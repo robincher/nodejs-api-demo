@@ -1,11 +1,9 @@
 "use strict";
 const app = require("express")();
-const mongoose = require("mongoose");
+const connectDB = require("./conf/database");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-const Task = require("./src/models/taskModel"); //created model loading here
-const mongoHost = process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/demo";
 const serverHost = process.env.HOSTNAME || "localhost"
 const serverPort = process.env.PORT || 3000;
 
@@ -13,12 +11,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
 let index = require("./src/routes/index");
 
-// mongoose instance connection url connection
-mongoose.Promise = global.Promise;
-mongoose.connect(mongoHost, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+connectDB();
 
 // Swagger definition
 // You can set every attribute except paths and swagger
