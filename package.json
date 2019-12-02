@@ -1,11 +1,11 @@
 {
   "name": "nodejs-api-demo",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Simple Restful API demo built with Node",
   "main": "server.js",
   "engineStrict": true,
   "engines": {
-    "node": "^10.x.x"
+    "node": "^10.14.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,14 +23,14 @@
   },
   "homepage": "git+https://github.com/robincher/nodejs-api-demo.git#readme",
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^2.0.1"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.17",
-    "swagger-jsdoc": "^3.2.7",
-    "swagger-ui-express": "^4.0.2"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13",
+    "swagger-jsdoc": "^3.4.0",
+    "swagger-ui-express": "^4.1.2"
   }
 }
