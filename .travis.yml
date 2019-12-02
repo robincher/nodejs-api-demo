@@ -6,10 +6,10 @@ services:
 before_install:
   - npm update
 
-script: "npm test"
+script:
+  - docker build --no-cache -t ${TRAVIS_REPO_SLUG}:${TRAVIS_COMMIT} .
 
 after_success:
-  - docker build --no-cache -t ${TRAVIS_REPO_SLUG}:${TRAVIS_COMMIT} .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ${TRAVIS_REPO_SLUG}:${TRAVIS_COMMIT}
 
