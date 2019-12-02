@@ -14,6 +14,6 @@ RUN npm install --only=production
 # Bundle app source
 COPY . .
 
-RUN echo "Starting services at localhost:3000.."
+RUN echo "Starting service at on port 3000.."
 EXPOSE 3000
 ENTRYPOINT ["npm", "start"]

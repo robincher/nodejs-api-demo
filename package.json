@@ -8,7 +8,7 @@
     "node": "^10.14.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "watch": "nodemon server.js",
     "start": "node server.js"
   },
@@ -23,7 +23,9 @@
   },
   "homepage": "git+https://github.com/robincher/nodejs-api-demo.git#readme",
   "devDependencies": {
-    "nodemon": "^2.0.1"
+    "nodemon": "^2.0.1",
+    "mocha": "^6.2.2",
+    "supertest": "4.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
