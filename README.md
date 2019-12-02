@@ -1,5 +1,7 @@
 # Node API Demo
 
+[![Build Status](https://travis-ci.org/robincher/nodejs-api-demo.svg?branch=master)](https://travis-ci.org/robincher/nodejs-api-demo)
+
 Demo REST API built with Node.js and OpenAPI (Swagger) documentation.
 
 ## Tech Stack
