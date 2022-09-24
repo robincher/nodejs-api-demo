@@ -10,7 +10,8 @@ const connectDB = async () => {
         //useUnifiedTopology: true,
         //seNewUrlParser: true,
         //useCreateIndex: true
-        serverSelectionTimeoutMS: 1000, // Defaults to 30000 (30 seconds)
+        //serverSelectionTimeoutMS: 1000, // Defaults to 30000 (30 seconds)
+        connectTimeoutMS : 1000
 } 
 ).then(() => {
          console.log('Database Connected....');
