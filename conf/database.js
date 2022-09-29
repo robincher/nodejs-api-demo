@@ -7,13 +7,15 @@ mongoose.Promise = global.Promise
 const connectDB = async () => {
 
     mongoose.connect(mongoHost, {
-        useUnifiedTopology: true,
-        useNewUrlParser: true,
-        useCreateIndex: true
-    }, () => {
-        console.log('Database Connected....');
-    }).catch(err => console.log(err));
-
+        //useUnifiedTopology: true,
+        //seNewUrlParser: true,
+        //useCreateIndex: true
+        //serverSelectionTimeoutMS: 1000, // Defaults to 30000 (30 seconds)
+        connectTimeoutMS : 1000
+} 
+).then(() => {
+         console.log('Database Connected....');
+}).catch(err => console.log(err));
 
 }
 
