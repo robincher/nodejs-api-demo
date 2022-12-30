@@ -24,7 +24,7 @@
   "homepage": "git+https://github.com/robincher/nodejs-api-demo.git#readme",
   "devDependencies": {
     "nodemon": "^2.0.1",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "supertest": "4.0.2"
   },
   "dependencies": {
